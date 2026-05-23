@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイ・オープンチャット Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f3f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-container { background-color: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; width: 340px; }
+        h1 { color: #06c755; font-size: 24px; margin-bottom: 25px; }
+        .input-group { margin-bottom: 15px; text-align: left; }
+        .input-group label { display: block; font-size: 12px; color: #666; margin-bottom: 5px; font-weight: bold; }
+        .input-group input { width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+        .btn-action { background-color: #06c755; color: white; border: none; padding: 12px 24px; font-size: 14px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; margin-top: 10px; }
+        .btn-action:hover { background-color: #05b34c; }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Openca Viewer</h1>
+        
+        <div class="input-group">
+            <label>メールアドレス</label>
+            <input type="email" id="email" placeholder="example@line.com">
+        </div>
+        <div class="input-group">
+            <label>パスワード</label>
+            <input type="password" id="password" placeholder="••••••••">
+        </div>
+        <button class="btn-action" onclick="sendToPython()">ログイン</button>
+    </div>
+
+    <script>
+        // ボタンが押されたらPythonにデータを送る関数
+        async function sendToPython() {
+            const emailVal = document.getElementById('email').value;
+            const passwordVal = document.getElementById('password').value;
+
+            // Pythonの窓口（/api/login）にデータを投げる
+            const response = await fetch('/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: emailVal, password: passwordVal })
+            });
+
+            const result = await response.json();
+            // Pythonから返ってきたお返事を画面にアラートで出す
+            alert(result.message);
+        }
+    </script>
+</body>
+</html>
