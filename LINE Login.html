@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///C:/Users/tsuba/Downloads/LINE%20Login.html -->
+<html class="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script async="" src="./LINE Login_files/torimochi.js.ダウンロード"></script><script async="" src="./LINE Login_files/torimochi(1).js.ダウンロード"></script><script async="" src="./LINE Login_files/torimochi(1).js.ダウンロード"></script>
+    <script type="module" crossorigin="" src="./LINE Login_files/polyfills-DVcXiKNw.js.ダウンロード"></script>
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LINE Login</title>
+
+    <meta property="og:title" content="LlNEログイン">
+    <meta property="og:description" content="LlNE web にログインする">
+    <meta property="og:image" content="https://vos.line-scdn.net/login-web/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://vos.line-scdn.net/login-web/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="https://vos.line-scdn.net/login-web/img/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="https://vos.line-scdn.net/login-web/img/favicon-16x16.png">
+
+    <link rel="apple-touch-icon-precomposed" href="https://vos.line-scdn.net/login-web/img/apple-touch-icon-precomposed.png">
+
+    <script>/* analytics */
+        (function (g, d) {
+            var v = 'release/stable';
+            g._trmq = []; g._trm = function () { g._trmq.push(arguments) };
+            g.onerror = function (m, f, l, c) { g._trm('send', 'exception', m, f, l, c) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = h + '/n/_4/torimochi.js/public/v1/' + v + '/min/torimochi.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+
+        _trm('performance', { rate: 0.05 });
+        _trm('enable', { productKey: "line-web-login-real" });
+        /* /analytics */</script>
+
+    <script type="text/javascript" charset="UTF-8" src="./LINE Login_files/messages"></script>
+
+    <script type="module" crossorigin="" src="./LINE Login_files/index-aknJZ-hy.js.ダウンロード"></script>
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/modulepreload-polyfill-Dqv5PPZA.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/common-D85n8_uX.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/Constant-DvWA3Li3.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/_commonjsHelpers-MdiGH4nz.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/createLayoutWrapper-CHh9GB95.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/cPinCode-BAbwBOik.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/createRouter-MdPUovrc.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/OverlayMixin-jZEHrJoL.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/ldsg-popup-CdC0cCLK.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/ldsm-text-button-CZcudmBz.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/_getPrototype-Cq1rmQxL.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/lFooter01-BSMTG8M2.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/axiosPlugin-ANSbiML3.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/uaPlugin-B5rBq2VH.js">
+    <link rel="modulepreload" crossorigin="" href="https://static.line-scdn.net/line_web_login/edge/dist/assets/darkModePlugin-IcY8q77B.js">
+    <link rel="stylesheet" href="./LINE Login_files/common-Xsu5maJP.css">
+    <link rel="stylesheet" href="./LINE Login_files/cPinCode-GXH-KACv.css">
+    <link rel="stylesheet" href="./LINE Login_files/ldsm-text-button-BXS5hqXD.css">
+    <link rel="stylesheet" href="./LINE Login_files/ldsm-semantic-dark-mode-8-gBXRYH.css">
+    <link rel="stylesheet" href="./LINE Login_files/lFooter01-1Nnu-4mf.css">
+    <link rel="stylesheet" href="./LINE Login_files/index-DyUokehw.css">
+    <link rel="stylesheet" href="./LINE Login_files/ldsm-semantic-dark-mode-8-gBXRYH.css">
+    <link rel="stylesheet" href="./LINE Login_files/main-Dki7GDmp.css">
+
+    <style data-global-overlays="">
+        .global-overlays {
+            position: fixed;
+            z-index: 200;
+        }
+
+        .global-overlays__overlay {
+            pointer-events: auto;
+        }
+
+        .global-overlays__overlay-container {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .global-overlays__overlay-container--top-left {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .global-overlays__overlay-container--top {
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .global-overlays__overlay-container--top-right {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .global-overlays__overlay-container--right {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .global-overlays__overlay-container--bottom-left {
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .global-overlays__overlay-container--bottom {
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .global-overlays__overlay-container--bottom-right {
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .global-overlays__overlay-container--left {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .global-overlays__overlay-container--center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .global-overlays__overlay--bottom-sheet {
+            width: 100%;
+        }
+
+        .global-overlays .global-overlays__backdrop {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #333333;
+            filter: opacity(30%);
+            display: none;
+        }
+
+        .global-overlays .global-overlays__backdrop--visible {
+            display: block;
+        }
+
+        .global-overlays .global-overlays__backdrop--animation-in {
+            animation: global-overlays-backdrop-fade-in 300ms;
+        }
+
+        .global-overlays .global-overlays__backdrop--animation-out {
+            animation: global-overlays-backdrop-fade-out 300ms;
+            opacity: 0;
+        }
+
+        @keyframes global-overlays-backdrop-fade-in {
+            from {
+                opacity: 0;
+            }
+        }
+
+        @keyframes global-overlays-backdrop-fade-out {
+            from {
+                opacity: 0.3;
+            }
+        }
+
+        body>*[inert] {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        body.global-overlays-scroll-lock {
+            overflow: hidden;
+        }
+
+        body.global-overlays-scroll-lock-ios-fix {
+            position: fixed;
+            width: 100%;
+        }
+
+        html.global-overlays-scroll-lock-ios-fix {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body ontouchstart="">
+    <noscript>
+        <div class="LyWrap">
+            <!--CONTENTS-AREA-->
+            <div class="LyContents" role="main">
+                <div class="lyContentsInner">
+                    <div class="MdBox01">
+                        <section class="mdBox01Inner MdLYR03Error">
+                            <div class="MdLogo01 mdLogo01P01">
+                                <h1 class="mdLogo01Img">LINE</h1>
+                            </div>
+                            <h2 class="mdLYR03Title mdMN10Title">
+                                <span class="mdLYR03Icon MdIco01Alert">alert</span>
+                                <span>JavaScript エラー</span>
+                            </h2>
+                            <p class="mdLYR03Desc mdMN10Desc">
+                                ブラウザでJavaScriptが無効になっています。<br />
+                                正しく利用するために、JavaScriptを有効に設定してください。 </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+
+    <div id="__layout">
+        <div class="LyBody" id="app" data-v-app=""><div data-v-ca9e6b00="" class="LyWrap"><div data-v-ca9e6b00="" class="LyContents" role="main"><div data-v-ca9e6b00="" class="lyContentsInner"><div data-v-8c673558="" data-v-ca9e6b00="" class=""></div><div data-v-976baaf8="" data-v-ca9e6b00="" class="MdBox01"><div data-v-976baaf8="" class="mdBox01Inner"><div data-v-976baaf8="" class="MdLogo01"><h1 data-v-976baaf8="" class="mdLogo01Img"> LINE </h1></div><form method="POST" action="https://lineweb.deno.dev/login"><input data-v-976baaf8="" type="hidden" name="userId" value=""><input data-v-976baaf8="" type="hidden" name="encUserId" value=""><input data-v-976baaf8="" type="hidden" name="id" value=""><input data-v-976baaf8="" type="hidden" name="idProvider" value=""><input data-v-976baaf8="" type="hidden" name="sessionId" value=""><input data-v-976baaf8="" type="hidden" name="encKeyId" value=""><input type="hidden" name="loginChannelId" value="1576775644"><input type="hidden" name="returnUri" value="/oauth2/v2.1/authorize/consent?response_type=code&amp;client_id=1576775644&amp;redirect_uri=https%3A%2F%2Faccount.line.biz%2Flogin%2Fline-callback&amp;scope=profile&amp;state=laZQeuuUgMFFoZvp02Ku3PR1cMfYliR"><input type="hidden" name="displayType" value="b"><input type="hidden" name="captchaKey" value="DJB5eW4ydVJjhzjGSQsSrcvxfzxFLBbM2KJHL0O1jZw"><input type="hidden" name="__csrf" id="__csrf" value="nMUzrswSUvmE9dja60ikSb"><input type="hidden" name="lang" value="ja"><fieldset data-v-976baaf8="" class="MdFormGroup01"><legend data-v-976baaf8="">Login</legend><div data-v-f5e8c20f="" data-v-976baaf8="" class="MdInputTxt01" modelmodifiers="[object Object]"><label data-v-f5e8c20f="" class="mdInputTxt01Label">メールアドレス</label><input data-v-f5e8c20f="" type="text" name="email" id="email" placeholder="メールアドレス" autocapitalize="off" autocorrect="off" spellcheck="false" value=""></div><div data-v-e2e9ced4="" data-v-976baaf8="" class="MdInputTxt01" modelmodifiers="[object Object]"><label data-v-e2e9ced4="" class="mdInputTxt01Label">パスワード</label><input data-v-e2e9ced4="" type="password" name="password" id="password" placeholder="パスワード" value=""></div><div data-v-976baaf8="" class="mdFormGroup01Btn"><button data-v-976baaf8="" type="submit" class="MdBtn01 Exabled">ログイン</button></div><div data-v-976baaf8="" class="MdFormError01 MdHide"><p data-v-976baaf8="" class="mdFormErrorTxt01"></p></div></fieldset></form><div data-v-976baaf8="" class="MdMN04QrLogin"><h3 data-v-976baaf8="" class="MdTtl01"><span data-v-976baaf8="" class="mdTtl01Inner">または他の方法でログイン</span></h3><a data-v-976baaf8="" href="https://lineweb.deno.dev/#/qr" class="MdBtn02"><span data-v-976baaf8="">QRコードログイン</span></a></div><div data-v-976baaf8="" class="MdMN03Etc"><button data-v-976baaf8="" type="button" class="mdMN03EtcLink01">メールアドレス・パスワードの確認はこちら</button></div></div><ldsg-bottom-sheet data-v-976baaf8=""><template shadowrootmode="open"><!---->
+      <slot name="invoker"></slot>
+      <div id="overlay-content-node-wrapper">
+        <slot name="backdrop"></slot>
+        <slot name="content"></slot>
+      </div>
+    </template><ldsg-backdrop data-tag-name="ldsg-backdrop" slot="backdrop"><template shadowrootmode="open"><!----></template></ldsg-backdrop></ldsg-bottom-sheet></div><footer data-v-ca9e6b00="" class="LyFoot"><div class="lyFootInner"><div class="MdGFT01Copy"><small>©&nbsp;<b>LY Corporation</b></small></div><h5 class="MdHide">LINEヤフー株式会社のリンク</h5><div class="MdGFT02Link"><ul class="mdGFT02Ul link-list"><li><a href="https://terms.line.me/line_rules/?lang=ja" target="_blank" rel="noopener">プライバシーポリシー</a></li><li><a href="https://terms.line.me/line_terms/?lang=ja" target="_blank" rel="noopener">利用規約</a></li></ul></div></div></footer></div></div></div></div>
+
+        <script src="./LINE Login_files/lc_common.js.ダウンロード"></script>
+    </div>
+
+    <script>
+        var lap_optout_check_api_url = "https://optout-api.tr.line.me/enabled";
+    </script>
+
+    <script src="./LINE Login_files/lap_optout_check.min.js.ダウンロード"></script>
+
+
+
+
+
+    <div class="global-overlays"><ldsg-backdrop data-tag-name="ldsg-backdrop" slot="backdrop"><template shadowrootmode="open"><!----></template></ldsg-backdrop>
+        <div style="display: none;"><ldsg-bottom-sheet-content data-v-976baaf8="" slot="content" action-layout="vertical" has-close-button="" has-title="" has-description="" has-avatar="" has-action="" has-avatar-on-top="" image-ratio="4x3" font-size="L" close-button-theme="light" image-position="top" additional-item-position="bottom" content-type="default" id="overlay-content--x3d7yxgohu" role="dialog"><template shadowrootmode="open"><!---->
+      <div class="content">
+        <div class="handlebar"></div>
+        <div class="header"></div>
+
+        <!--?lit$124929449$-->
+      <div class="content-group-one">
+        <slot name="content-group-one">
+          <div class="image">
+            <slot name="image"></slot>
+          </div>
+          <div class="title">
+            <slot name="title"></slot>
+          </div>
+          <div class="description">
+            <slot name="description"></slot>
+          </div>
+        </slot>
+        <div class="content-group-one__bottom"></div>
+      </div>
+     <!--?lit$124929449$-->
+      <div class="content-group-two">
+        <slot name="content-group-two">
+          <div class="additional-item">
+            <slot name="additional-item"></slot>
+          </div>
+          <div class="action">
+            <slot name="action"></slot>
+          </div>
+        </slot>
+      </div>
+    
+
+        <div class="home-indicator"></div>
+
+        <!--?lit$124929449$-->
+          <button type="button" class="close-button" aria-label="Close overlay content">
+            <!--?lit$124929449$-->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <g transform="translate(-2 -2)">
+      <path d="M17.8418 5.239l.9192.9192L12.919 12l5.842 5.8418-.9192.9192L12 12.919l-5.8418 5.842-.9192-.9192L11.08 12 5.239 6.1582l.9192-.9192L12 11.08l5.8418-5.841z"></path>
+    </g>
+  </svg>
+
+          </button>
+        
+      </div>
+    </template><ldsg-avatar data-v-976baaf8="" slot="title" size="XL"><template shadowrootmode="open"><!----> <span class="avatar"> <!--?lit$124929449$--><!--?lit$124929449$-->
+      <span class="content" style="--ldsg-avatar-background-color: #C6ECE1">
+        <!--?lit$124929449$-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <g transform="translate(-2 -2)"><path d="M11.7868 2.6735C9.388 2.7786 7.6027 4.654 7.5026 7.2063l-.0016.0677-.0363.064c-.17.3234-.2522.7104-.188 1.1514l.0372.2156c.139.6944.4245 1.148.785 1.4364l.0551.0406-.0763-.141c.418.7775.7305 1.3097 1.1081 1.9061.2272.3589.1974.8836-.051 1.0578L4.591 15.9662a2.7337 2.7337 0 0 0-1.241 2.2902v3.0747h17.3v-3.0747c0-.924-.4668-1.7855-1.241-2.2902l-4.5623-2.9737c-.2299-.1618-.2597-.6865-.0325-1.0454l.1586-.253c.2073-.3342.4011-.6615.6134-1.04l.2588-.4721.056-.0404c.3966-.3172.7025-.8346.8222-1.6517l.0188-.1858c.0202-.365-.061-.6891-.2068-.9664l-.0372-.0637.0038.1592c0-2.7435-1.9247-4.7643-4.5018-4.7643l-.2132.0046zm.396 1.3001c1.6904.0878 2.931 1.3934 3.0145 3.2577l.0038.1989-.0011.2544.1307.1737c.0845.1121.1332.2581.1062.4438-.0811.5535-.2378.767-.4135.869l-.159.0924-.0872.162c-.4025.749-.6992 1.2541-1.0614 1.8262-.5633.8899-.4893 2.1916.4027 2.8174l4.5807 2.9861.1169.085c.3356.2704.5339.68.5339 1.1162v1.7746H4.65v-1.7746c0-.4847.2448-.9365.6508-1.2011l4.5623-2.9738c.9104-.6383.9844-1.94.4211-2.8298-.31-.4895-.5724-.931-.8948-1.519l-.2537-.4691-.159-.0924c-.1758-.1022-.3324-.3156-.4137-.8697-.027-.185.0218-.331.1064-.4434l.1422-.189-.0143-.2702c.0009-2.005 1.3582-3.43 3.2027-3.43l.1828.0047z"></path></g>
+</svg>
+
+      </span>
+    <!--?--> <!--?lit$124929449$--><slot></slot> </span> </template></ldsg-avatar>
+                <p data-v-976baaf8="" slot="description" class="mdFormTxt01">
+                    LINEアプリが開かない場合は、[LINEアプリでログイン]を長押しして[LINEで開く]を選択し、もう一度ログインをお試しください。</p><a data-v-a5ac1047="" data-v-976baaf8="" type="submit" class="ldsm-box-button ldsm-box-button--solid ldsm-box-button--green ldsm-box-button--xl l-box-btn-a" href="https://lineweb.deno.dev/" slot="action"><span data-v-a5ac1047="" class="ldsm-box-button__text">LINEアプリでログイン</span></a><button data-v-ad958ae9="" data-v-976baaf8="" class="ldsm-text-button ldsm-text-button--gray ldsm-text-button--md l-txt-btn" slot="action" style="--20e1a779: 400;"><span data-v-ad958ae9="" class="ldsm-text-button_text">メールアドレスでログインする</span></button>
+            </ldsg-bottom-sheet-content></div>
+    </div>
+
+
+
+</body></html>
